@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shree Ram Furniture</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h2>Shree Ram Furniture</h2>
+  <div class="cart-btn" onclick="openCart()">
+    🛒 Cart (<span id="cartCount">0</span>)
+  </div>
+</header>
+
+<h3 class="title">Premium Wooden Furniture</h3>
+
+<a href="tel:9696178421" class="call-btn">📞 CALL NOW</a>
+
+<section class="cards">
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1582582429416-09b1f3c7b6a4" />
+    <h4>Wooden Sofa</h4>
+    <button onclick="addToCart('Wooden Sofa',15000)">Add</button>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1598300053653-64f7c1f2d0f2" />
+    <h4>Luxury Bed</h4>
+    <button onclick="addToCart('Luxury Bed',25000)">Add</button>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1600494448850-601c1e8c27b2" />
+    <h4>Dining Table</h4>
+    <button onclick="addToCart('Dining Table',18000)">Add</button>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed" />
+    <h4>Wooden Chair</h4>
+    <button onclick="addToCart('Wooden Chair',5000)">Add</button>
+  </div>
+
+</section>
+
+<footer>
+  <b>Shree Ram Furniture</b> • Made in India <br>
+  📞 <a href="tel:9696178421">9696178421</a>
+</footer>
+
+<!-- CART OVERLAY -->
+<div class="overlay" onclick="closeCart()"></div>
+
+<!-- CART SIDEBAR -->
+<div class="cart-sidebar">
+  <h3>Your Cart ❌</h3>
+  <ul id="cartItems"></ul>
+  <p>Total: ₹<span id="total">0</span></p>
+  <button class="whatsapp-btn" onclick="orderWhatsApp()">📲 Order on WhatsApp</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
